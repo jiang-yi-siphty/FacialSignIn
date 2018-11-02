@@ -60,6 +60,8 @@
 		A2FBFF57218BE9F1007A61D6 /* ApproveViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBFF55218BE9F1007A61D6 /* ApproveViewModelTests.swift */; };
 		A2FBFF59218BEA0D007A61D6 /* SampleFaceViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBFF58218BEA0D007A61D6 /* SampleFaceViewModelTests.swift */; };
 		A2FBFF5A218BEA0D007A61D6 /* SampleFaceViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBFF58218BEA0D007A61D6 /* SampleFaceViewModelTests.swift */; };
+		A2FBFF5C218C0C6D007A61D6 /* ApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBFF5B218C0C6D007A61D6 /* ApiServiceTests.swift */; };
+		A2FBFF5D218C0C6D007A61D6 /* ApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBFF5B218C0C6D007A61D6 /* ApiServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +125,7 @@
 		A2FBFF52218BE9C8007A61D6 /* SignInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelTests.swift; sourceTree = "<group>"; };
 		A2FBFF55218BE9F1007A61D6 /* ApproveViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproveViewModelTests.swift; sourceTree = "<group>"; };
 		A2FBFF58218BEA0D007A61D6 /* SampleFaceViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFaceViewModelTests.swift; sourceTree = "<group>"; };
+		A2FBFF5B218C0C6D007A61D6 /* ApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceTests.swift; sourceTree = "<group>"; };
 		B400AA2D7081C19007D34365 /* Pods_FacialSignInTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacialSignInTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59BC594C8996D55EC88460A /* Pods-FacialSignIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacialSignIn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacialSignIn/Pods-FacialSignIn.debug.xcconfig"; sourceTree = "<group>"; };
 		D960CD1873ADA0841E036802 /* Pods-FacialSignInUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacialSignInUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacialSignInUITests/Pods-FacialSignInUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -245,6 +248,7 @@
 				A2D481D121817BAD009E6E9F /* Info.plist */,
 				A2FBFF3C218BE76A007A61D6 /* Mock Responses */,
 				A2FBFF3D218BE7B8007A61D6 /* MockApiClient.swift */,
+				A2FBFF5B218C0C6D007A61D6 /* ApiServiceTests.swift */,
 				A2D481CF21817BAD009E6E9F /* FacialSignInTests.swift */,
 				A2FBFF52218BE9C8007A61D6 /* SignInViewModelTests.swift */,
 				A2FBFF55218BE9F1007A61D6 /* ApproveViewModelTests.swift */,
@@ -543,6 +547,7 @@
 				A2B212312187F394002487D9 /* SampleFaceViewController.swift in Sources */,
 				A281C9EB218BC72400B6E248 /* SampleFaceViewModel.swift in Sources */,
 				A2D481C021817BAC009E6E9F /* FacialSignIn.xcdatamodeld in Sources */,
+				A2FBFF5C218C0C6D007A61D6 /* ApiServiceTests.swift in Sources */,
 				A281C9EE218BCBC300B6E248 /* Visitor.swift in Sources */,
 				A2B2122F2187F242002487D9 /* ApproveViewController.swift in Sources */,
 				A281C9E8218BC6FD00B6E248 /* ApproveViewModel.swift in Sources */,
@@ -579,6 +584,7 @@
 				A281C9F8218BCC0900B6E248 /* ApiService.swift in Sources */,
 				A2D481D021817BAD009E6E9F /* FacialSignInTests.swift in Sources */,
 				A255EE1D218BD23E006BED25 /* PotentialVisitor.swift in Sources */,
+				A2FBFF5D218C0C6D007A61D6 /* ApiServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
