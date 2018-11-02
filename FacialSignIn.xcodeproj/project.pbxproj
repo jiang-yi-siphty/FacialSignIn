@@ -1,0 +1,925 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E835AAEFF3340BBCD7199B5 /* Pods_FacialSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9010C5E9A53153444EE55A2A /* Pods_FacialSignIn.framework */; };
+		2E5354E5A215624420454870 /* Pods_FacialSignInTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B400AA2D7081C19007D34365 /* Pods_FacialSignInTests.framework */; };
+		9E63D1F3C4D26E92C8116567 /* Pods_FacialSignInUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D02F8188EA9CAD0DF5CD9D /* Pods_FacialSignInUITests.framework */; };
+		A255EE1C218BD23E006BED25 /* PotentialVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A255EE1B218BD23E006BED25 /* PotentialVisitor.swift */; };
+		A255EE1D218BD23E006BED25 /* PotentialVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A255EE1B218BD23E006BED25 /* PotentialVisitor.swift */; };
+		A255EE1F218BD79C006BED25 /* NewVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A255EE1E218BD79C006BED25 /* NewVisitor.swift */; };
+		A255EE20218BD79C006BED25 /* NewVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A255EE1E218BD79C006BED25 /* NewVisitor.swift */; };
+		A281C9E5218BC6ED00B6E248 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281C9E4218BC6ED00B6E248 /* SignInViewModel.swift */; };
+		A281C9E6218BC6ED00B6E248 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281C9E4218BC6ED00B6E248 /* SignInViewModel.swift */; };
+		A281C9E8218BC6FD00B6E248 /* ApproveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281C9E7218BC6FD00B6E248 /* ApproveViewModel.swift */; };
+		A281C9E9218BC6FD00B6E248 /* ApproveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281C9E7218BC6FD00B6E248 /* ApproveViewModel.swift */; };
+		A281C9EB218BC72400B6E248 /* SampleFaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281C9EA218BC72400B6E248 /* SampleFaceViewModel.swift */; };
+		A281C9EC218BC72400B6E248 /* SampleFaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281C9EA218BC72400B6E248 /* SampleFaceViewModel.swift */; };
+		A281C9EE218BCBC300B6E248 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281C9ED218BCBC300B6E248 /* Visitor.swift */; };
+		A281C9EF218BCBC300B6E248 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281C9ED218BCBC300B6E248 /* Visitor.swift */; };
+		A281C9F1218BCBD800B6E248 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281C9F0218BCBD800B6E248 /* Employee.swift */; };
+		A281C9F2218BCBD800B6E248 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281C9F0218BCBD800B6E248 /* Employee.swift */; };
+		A281C9F4218BCBFE00B6E248 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281C9F3218BCBFE00B6E248 /* ApiClient.swift */; };
+		A281C9F5218BCBFE00B6E248 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281C9F3218BCBFE00B6E248 /* ApiClient.swift */; };
+		A281C9F7218BCC0900B6E248 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281C9F6218BCC0900B6E248 /* ApiService.swift */; };
+		A281C9F8218BCC0900B6E248 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281C9F6218BCC0900B6E248 /* ApiService.swift */; };
+		A2B2122B2187F181002487D9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2122A2187F181002487D9 /* SignInViewController.swift */; };
+		A2B2122D2187F1B6002487D9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2122C2187F1B6002487D9 /* MainViewController.swift */; };
+		A2B2122F2187F242002487D9 /* ApproveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2122E2187F242002487D9 /* ApproveViewController.swift */; };
+		A2B212312187F394002487D9 /* SampleFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B212302187F394002487D9 /* SampleFaceViewController.swift */; };
+		A2B2123321882039002487D9 /* CameraPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2123221882039002487D9 /* CameraPreviewViewController.swift */; };
+		A2B21235218A84CC002487D9 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B21234218A84CC002487D9 /* CameraView.swift */; };
+		A2D481B821817BAC009E6E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D481B721817BAC009E6E9F /* AppDelegate.swift */; };
+		A2D481BD21817BAC009E6E9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D481BB21817BAC009E6E9F /* Main.storyboard */; };
+		A2D481C021817BAC009E6E9F /* FacialSignIn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2D481BE21817BAC009E6E9F /* FacialSignIn.xcdatamodeld */; };
+		A2D481C221817BAD009E6E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D481C121817BAD009E6E9F /* Assets.xcassets */; };
+		A2D481C521817BAD009E6E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D481C321817BAD009E6E9F /* LaunchScreen.storyboard */; };
+		A2D481D021817BAD009E6E9F /* FacialSignInTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D481CF21817BAD009E6E9F /* FacialSignInTests.swift */; };
+		A2D481DB21817BAD009E6E9F /* FacialSignInUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D481DA21817BAD009E6E9F /* FacialSignInUITests.swift */; };
+		A2FBFF3F218BE7B8007A61D6 /* MockApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBFF3D218BE7B8007A61D6 /* MockApiClient.swift */; };
+		A2FBFF41218BE85C007A61D6 /* PotentialVisitorsRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A2FBFF40218BE85C007A61D6 /* PotentialVisitorsRequest.json */; };
+		A2FBFF42218BE85C007A61D6 /* PotentialVisitorsRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A2FBFF40218BE85C007A61D6 /* PotentialVisitorsRequest.json */; };
+		A2FBFF44218BE894007A61D6 /* NewVisitorRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A2FBFF43218BE894007A61D6 /* NewVisitorRequest.json */; };
+		A2FBFF45218BE894007A61D6 /* NewVisitorRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A2FBFF43218BE894007A61D6 /* NewVisitorRequest.json */; };
+		A2FBFF47218BE922007A61D6 /* IdentifyVisitorRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A2FBFF46218BE922007A61D6 /* IdentifyVisitorRequest.json */; };
+		A2FBFF48218BE922007A61D6 /* IdentifyVisitorRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A2FBFF46218BE922007A61D6 /* IdentifyVisitorRequest.json */; };
+		A2FBFF4C218BE998007A61D6 /* IdentifyVisitorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = A2FBFF49218BE998007A61D6 /* IdentifyVisitorResponse.json */; };
+		A2FBFF4D218BE998007A61D6 /* IdentifyVisitorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = A2FBFF49218BE998007A61D6 /* IdentifyVisitorResponse.json */; };
+		A2FBFF4E218BE998007A61D6 /* NewVisitorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = A2FBFF4A218BE998007A61D6 /* NewVisitorResponse.json */; };
+		A2FBFF4F218BE998007A61D6 /* NewVisitorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = A2FBFF4A218BE998007A61D6 /* NewVisitorResponse.json */; };
+		A2FBFF50218BE998007A61D6 /* PotentialVisitorsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = A2FBFF4B218BE998007A61D6 /* PotentialVisitorsResponse.json */; };
+		A2FBFF51218BE998007A61D6 /* PotentialVisitorsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = A2FBFF4B218BE998007A61D6 /* PotentialVisitorsResponse.json */; };
+		A2FBFF53218BE9C8007A61D6 /* SignInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBFF52218BE9C8007A61D6 /* SignInViewModelTests.swift */; };
+		A2FBFF54218BE9C8007A61D6 /* SignInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBFF52218BE9C8007A61D6 /* SignInViewModelTests.swift */; };
+		A2FBFF56218BE9F1007A61D6 /* ApproveViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBFF55218BE9F1007A61D6 /* ApproveViewModelTests.swift */; };
+		A2FBFF57218BE9F1007A61D6 /* ApproveViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBFF55218BE9F1007A61D6 /* ApproveViewModelTests.swift */; };
+		A2FBFF59218BEA0D007A61D6 /* SampleFaceViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBFF58218BEA0D007A61D6 /* SampleFaceViewModelTests.swift */; };
+		A2FBFF5A218BEA0D007A61D6 /* SampleFaceViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBFF58218BEA0D007A61D6 /* SampleFaceViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2D481CC21817BAD009E6E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2D481AC21817BAC009E6E9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2D481B321817BAC009E6E9F;
+			remoteInfo = FacialSignIn;
+		};
+		A2D481D721817BAD009E6E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2D481AC21817BAC009E6E9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2D481B321817BAC009E6E9F;
+			remoteInfo = FacialSignIn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		061AFE34962824BCB47C5932 /* Pods-FacialSignInUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacialSignInUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacialSignInUITests/Pods-FacialSignInUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		13B1D38C831B4058E5669BE8 /* Pods-FacialSignIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacialSignIn.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacialSignIn/Pods-FacialSignIn.release.xcconfig"; sourceTree = "<group>"; };
+		58D02F8188EA9CAD0DF5CD9D /* Pods_FacialSignInUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacialSignInUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		855EE9003D8921FFB4230CA3 /* Pods-FacialSignInTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacialSignInTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacialSignInTests/Pods-FacialSignInTests.release.xcconfig"; sourceTree = "<group>"; };
+		9010C5E9A53153444EE55A2A /* Pods_FacialSignIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacialSignIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A255EE1B218BD23E006BED25 /* PotentialVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotentialVisitor.swift; sourceTree = "<group>"; };
+		A255EE1E218BD79C006BED25 /* NewVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVisitor.swift; sourceTree = "<group>"; };
+		A281C9E4218BC6ED00B6E248 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		A281C9E7218BC6FD00B6E248 /* ApproveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproveViewModel.swift; sourceTree = "<group>"; };
+		A281C9EA218BC72400B6E248 /* SampleFaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFaceViewModel.swift; sourceTree = "<group>"; };
+		A281C9ED218BCBC300B6E248 /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
+		A281C9F0218BCBD800B6E248 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		A281C9F3218BCBFE00B6E248 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		A281C9F6218BCC0900B6E248 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		A2B2122A2187F181002487D9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		A2B2122C2187F1B6002487D9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A2B2122E2187F242002487D9 /* ApproveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproveViewController.swift; sourceTree = "<group>"; };
+		A2B212302187F394002487D9 /* SampleFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFaceViewController.swift; sourceTree = "<group>"; };
+		A2B2123221882039002487D9 /* CameraPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewViewController.swift; sourceTree = "<group>"; };
+		A2B21234218A84CC002487D9 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		A2D481B421817BAC009E6E9F /* FacialSignIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacialSignIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D481B721817BAC009E6E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2D481BC21817BAC009E6E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2D481BF21817BAC009E6E9F /* FacialSignIn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FacialSignIn.xcdatamodel; sourceTree = "<group>"; };
+		A2D481C121817BAD009E6E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2D481C421817BAD009E6E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2D481C621817BAD009E6E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2D481CB21817BAD009E6E9F /* FacialSignInTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacialSignInTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D481CF21817BAD009E6E9F /* FacialSignInTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialSignInTests.swift; sourceTree = "<group>"; };
+		A2D481D121817BAD009E6E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2D481D621817BAD009E6E9F /* FacialSignInUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacialSignInUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D481DA21817BAD009E6E9F /* FacialSignInUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialSignInUITests.swift; sourceTree = "<group>"; };
+		A2D481DC21817BAD009E6E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2FBFF3D218BE7B8007A61D6 /* MockApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiClient.swift; sourceTree = "<group>"; };
+		A2FBFF40218BE85C007A61D6 /* PotentialVisitorsRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PotentialVisitorsRequest.json; sourceTree = "<group>"; };
+		A2FBFF43218BE894007A61D6 /* NewVisitorRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NewVisitorRequest.json; sourceTree = "<group>"; };
+		A2FBFF46218BE922007A61D6 /* IdentifyVisitorRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IdentifyVisitorRequest.json; sourceTree = "<group>"; };
+		A2FBFF49218BE998007A61D6 /* IdentifyVisitorResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IdentifyVisitorResponse.json; sourceTree = "<group>"; };
+		A2FBFF4A218BE998007A61D6 /* NewVisitorResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NewVisitorResponse.json; sourceTree = "<group>"; };
+		A2FBFF4B218BE998007A61D6 /* PotentialVisitorsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PotentialVisitorsResponse.json; sourceTree = "<group>"; };
+		A2FBFF52218BE9C8007A61D6 /* SignInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelTests.swift; sourceTree = "<group>"; };
+		A2FBFF55218BE9F1007A61D6 /* ApproveViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproveViewModelTests.swift; sourceTree = "<group>"; };
+		A2FBFF58218BEA0D007A61D6 /* SampleFaceViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFaceViewModelTests.swift; sourceTree = "<group>"; };
+		B400AA2D7081C19007D34365 /* Pods_FacialSignInTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacialSignInTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59BC594C8996D55EC88460A /* Pods-FacialSignIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacialSignIn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacialSignIn/Pods-FacialSignIn.debug.xcconfig"; sourceTree = "<group>"; };
+		D960CD1873ADA0841E036802 /* Pods-FacialSignInUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacialSignInUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacialSignInUITests/Pods-FacialSignInUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD657B168573653B574D3330 /* Pods-FacialSignInTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacialSignInTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacialSignInTests/Pods-FacialSignInTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2D481B121817BAC009E6E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E835AAEFF3340BBCD7199B5 /* Pods_FacialSignIn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D481C821817BAD009E6E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E5354E5A215624420454870 /* Pods_FacialSignInTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D481D321817BAD009E6E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E63D1F3C4D26E92C8116567 /* Pods_FacialSignInUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2B212242187EF2E002487D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2B2122C2187F1B6002487D9 /* MainViewController.swift */,
+				A2B2122A2187F181002487D9 /* SignInViewController.swift */,
+				A2B2122E2187F242002487D9 /* ApproveViewController.swift */,
+				A2B212302187F394002487D9 /* SampleFaceViewController.swift */,
+				A2B2123221882039002487D9 /* CameraPreviewViewController.swift */,
+				A2B21234218A84CC002487D9 /* CameraView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2B212252187EF5B002487D9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A281C9E4218BC6ED00B6E248 /* SignInViewModel.swift */,
+				A281C9E7218BC6FD00B6E248 /* ApproveViewModel.swift */,
+				A281C9EA218BC72400B6E248 /* SampleFaceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A2B212262187EF67002487D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A281C9ED218BCBC300B6E248 /* Visitor.swift */,
+				A281C9F0218BCBD800B6E248 /* Employee.swift */,
+				A255EE1B218BD23E006BED25 /* PotentialVisitor.swift */,
+				A255EE1E218BD79C006BED25 /* NewVisitor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A2B212272187EFD0002487D9 /* ServerManager */ = {
+			isa = PBXGroup;
+			children = (
+				A281C9F3218BCBFE00B6E248 /* ApiClient.swift */,
+				A281C9F6218BCC0900B6E248 /* ApiService.swift */,
+			);
+			path = ServerManager;
+			sourceTree = "<group>";
+		};
+		A2D481AB21817BAC009E6E9F = {
+			isa = PBXGroup;
+			children = (
+				A2D481B621817BAC009E6E9F /* FacialSignIn */,
+				A2D481CE21817BAD009E6E9F /* FacialSignInTests */,
+				A2D481D921817BAD009E6E9F /* FacialSignInUITests */,
+				A2D481B521817BAC009E6E9F /* Products */,
+				C3F41CFB03C36CF331E4B18B /* Pods */,
+				D3014B4198263938F61E0528 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A2D481B521817BAC009E6E9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2D481B421817BAC009E6E9F /* FacialSignIn.app */,
+				A2D481CB21817BAD009E6E9F /* FacialSignInTests.xctest */,
+				A2D481D621817BAD009E6E9F /* FacialSignInUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2D481B621817BAC009E6E9F /* FacialSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				A2D481B721817BAC009E6E9F /* AppDelegate.swift */,
+				A2D481BB21817BAC009E6E9F /* Main.storyboard */,
+				A2B212242187EF2E002487D9 /* View */,
+				A2B212252187EF5B002487D9 /* ViewModel */,
+				A2B212262187EF67002487D9 /* Model */,
+				A2B212272187EFD0002487D9 /* ServerManager */,
+				A2D481C121817BAD009E6E9F /* Assets.xcassets */,
+				A2D481C321817BAD009E6E9F /* LaunchScreen.storyboard */,
+				A2D481C621817BAD009E6E9F /* Info.plist */,
+				A2D481BE21817BAC009E6E9F /* FacialSignIn.xcdatamodeld */,
+			);
+			path = FacialSignIn;
+			sourceTree = "<group>";
+		};
+		A2D481CE21817BAD009E6E9F /* FacialSignInTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2D481D121817BAD009E6E9F /* Info.plist */,
+				A2FBFF3C218BE76A007A61D6 /* Mock Responses */,
+				A2FBFF3D218BE7B8007A61D6 /* MockApiClient.swift */,
+				A2D481CF21817BAD009E6E9F /* FacialSignInTests.swift */,
+				A2FBFF52218BE9C8007A61D6 /* SignInViewModelTests.swift */,
+				A2FBFF55218BE9F1007A61D6 /* ApproveViewModelTests.swift */,
+				A2FBFF58218BEA0D007A61D6 /* SampleFaceViewModelTests.swift */,
+			);
+			path = FacialSignInTests;
+			sourceTree = "<group>";
+		};
+		A2D481D921817BAD009E6E9F /* FacialSignInUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A2D481DA21817BAD009E6E9F /* FacialSignInUITests.swift */,
+				A2D481DC21817BAD009E6E9F /* Info.plist */,
+			);
+			path = FacialSignInUITests;
+			sourceTree = "<group>";
+		};
+		A2FBFF3C218BE76A007A61D6 /* Mock Responses */ = {
+			isa = PBXGroup;
+			children = (
+				A2FBFF46218BE922007A61D6 /* IdentifyVisitorRequest.json */,
+				A2FBFF49218BE998007A61D6 /* IdentifyVisitorResponse.json */,
+				A2FBFF43218BE894007A61D6 /* NewVisitorRequest.json */,
+				A2FBFF4A218BE998007A61D6 /* NewVisitorResponse.json */,
+				A2FBFF40218BE85C007A61D6 /* PotentialVisitorsRequest.json */,
+				A2FBFF4B218BE998007A61D6 /* PotentialVisitorsResponse.json */,
+			);
+			path = "Mock Responses";
+			sourceTree = "<group>";
+		};
+		C3F41CFB03C36CF331E4B18B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C59BC594C8996D55EC88460A /* Pods-FacialSignIn.debug.xcconfig */,
+				13B1D38C831B4058E5669BE8 /* Pods-FacialSignIn.release.xcconfig */,
+				FD657B168573653B574D3330 /* Pods-FacialSignInTests.debug.xcconfig */,
+				855EE9003D8921FFB4230CA3 /* Pods-FacialSignInTests.release.xcconfig */,
+				061AFE34962824BCB47C5932 /* Pods-FacialSignInUITests.debug.xcconfig */,
+				D960CD1873ADA0841E036802 /* Pods-FacialSignInUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3014B4198263938F61E0528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9010C5E9A53153444EE55A2A /* Pods_FacialSignIn.framework */,
+				B400AA2D7081C19007D34365 /* Pods_FacialSignInTests.framework */,
+				58D02F8188EA9CAD0DF5CD9D /* Pods_FacialSignInUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2D481B321817BAC009E6E9F /* FacialSignIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2D481DF21817BAD009E6E9F /* Build configuration list for PBXNativeTarget "FacialSignIn" */;
+			buildPhases = (
+				6C4C8877B96CC09EA2123443 /* [CP] Check Pods Manifest.lock */,
+				A2D481B021817BAC009E6E9F /* Sources */,
+				A2D481B121817BAC009E6E9F /* Frameworks */,
+				A2D481B221817BAC009E6E9F /* Resources */,
+				845E08EA073DF6708A94796E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FacialSignIn;
+			productName = FacialSignIn;
+			productReference = A2D481B421817BAC009E6E9F /* FacialSignIn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2D481CA21817BAD009E6E9F /* FacialSignInTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2D481E221817BAD009E6E9F /* Build configuration list for PBXNativeTarget "FacialSignInTests" */;
+			buildPhases = (
+				C1D64525C80357A227947F2B /* [CP] Check Pods Manifest.lock */,
+				A2D481C721817BAD009E6E9F /* Sources */,
+				A2D481C821817BAD009E6E9F /* Frameworks */,
+				A2D481C921817BAD009E6E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2D481CD21817BAD009E6E9F /* PBXTargetDependency */,
+			);
+			name = FacialSignInTests;
+			productName = FacialSignInTests;
+			productReference = A2D481CB21817BAD009E6E9F /* FacialSignInTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A2D481D521817BAD009E6E9F /* FacialSignInUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2D481E521817BAD009E6E9F /* Build configuration list for PBXNativeTarget "FacialSignInUITests" */;
+			buildPhases = (
+				6478F44D7D26EA3C83F8F283 /* [CP] Check Pods Manifest.lock */,
+				A2D481D221817BAD009E6E9F /* Sources */,
+				A2D481D321817BAD009E6E9F /* Frameworks */,
+				A2D481D421817BAD009E6E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2D481D821817BAD009E6E9F /* PBXTargetDependency */,
+			);
+			name = FacialSignInUITests;
+			productName = FacialSignInUITests;
+			productReference = A2D481D621817BAD009E6E9F /* FacialSignInUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2D481AC21817BAC009E6E9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Inteliment;
+				TargetAttributes = {
+					A2D481B321817BAC009E6E9F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					A2D481CA21817BAD009E6E9F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = A2D481B321817BAC009E6E9F;
+					};
+					A2D481D521817BAD009E6E9F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = A2D481B321817BAC009E6E9F;
+					};
+				};
+			};
+			buildConfigurationList = A2D481AF21817BAC009E6E9F /* Build configuration list for PBXProject "FacialSignIn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2D481AB21817BAC009E6E9F;
+			productRefGroup = A2D481B521817BAC009E6E9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2D481B321817BAC009E6E9F /* FacialSignIn */,
+				A2D481CA21817BAD009E6E9F /* FacialSignInTests */,
+				A2D481D521817BAD009E6E9F /* FacialSignInUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2D481B221817BAC009E6E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2FBFF4E218BE998007A61D6 /* NewVisitorResponse.json in Resources */,
+				A2FBFF47218BE922007A61D6 /* IdentifyVisitorRequest.json in Resources */,
+				A2FBFF41218BE85C007A61D6 /* PotentialVisitorsRequest.json in Resources */,
+				A2D481C521817BAD009E6E9F /* LaunchScreen.storyboard in Resources */,
+				A2FBFF50218BE998007A61D6 /* PotentialVisitorsResponse.json in Resources */,
+				A2D481C221817BAD009E6E9F /* Assets.xcassets in Resources */,
+				A2FBFF4C218BE998007A61D6 /* IdentifyVisitorResponse.json in Resources */,
+				A2FBFF44218BE894007A61D6 /* NewVisitorRequest.json in Resources */,
+				A2D481BD21817BAC009E6E9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D481C921817BAD009E6E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2FBFF48218BE922007A61D6 /* IdentifyVisitorRequest.json in Resources */,
+				A2FBFF42218BE85C007A61D6 /* PotentialVisitorsRequest.json in Resources */,
+				A2FBFF4F218BE998007A61D6 /* NewVisitorResponse.json in Resources */,
+				A2FBFF45218BE894007A61D6 /* NewVisitorRequest.json in Resources */,
+				A2FBFF51218BE998007A61D6 /* PotentialVisitorsResponse.json in Resources */,
+				A2FBFF4D218BE998007A61D6 /* IdentifyVisitorResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D481D421817BAD009E6E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6478F44D7D26EA3C83F8F283 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FacialSignInUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C4C8877B96CC09EA2123443 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FacialSignIn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		845E08EA073DF6708A94796E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FacialSignIn/Pods-FacialSignIn-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacialSignIn/Pods-FacialSignIn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1D64525C80357A227947F2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FacialSignInTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2D481B021817BAC009E6E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B2122B2187F181002487D9 /* SignInViewController.swift in Sources */,
+				A255EE1C218BD23E006BED25 /* PotentialVisitor.swift in Sources */,
+				A2B212312187F394002487D9 /* SampleFaceViewController.swift in Sources */,
+				A281C9EB218BC72400B6E248 /* SampleFaceViewModel.swift in Sources */,
+				A2D481C021817BAC009E6E9F /* FacialSignIn.xcdatamodeld in Sources */,
+				A281C9EE218BCBC300B6E248 /* Visitor.swift in Sources */,
+				A2B2122F2187F242002487D9 /* ApproveViewController.swift in Sources */,
+				A281C9E8218BC6FD00B6E248 /* ApproveViewModel.swift in Sources */,
+				A281C9F4218BCBFE00B6E248 /* ApiClient.swift in Sources */,
+				A2B2123321882039002487D9 /* CameraPreviewViewController.swift in Sources */,
+				A281C9E5218BC6ED00B6E248 /* SignInViewModel.swift in Sources */,
+				A281C9F1218BCBD800B6E248 /* Employee.swift in Sources */,
+				A2FBFF53218BE9C8007A61D6 /* SignInViewModelTests.swift in Sources */,
+				A2FBFF59218BEA0D007A61D6 /* SampleFaceViewModelTests.swift in Sources */,
+				A281C9F7218BCC0900B6E248 /* ApiService.swift in Sources */,
+				A2FBFF56218BE9F1007A61D6 /* ApproveViewModelTests.swift in Sources */,
+				A255EE1F218BD79C006BED25 /* NewVisitor.swift in Sources */,
+				A2D481B821817BAC009E6E9F /* AppDelegate.swift in Sources */,
+				A2B2122D2187F1B6002487D9 /* MainViewController.swift in Sources */,
+				A2B21235218A84CC002487D9 /* CameraView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D481C721817BAD009E6E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2FBFF57218BE9F1007A61D6 /* ApproveViewModelTests.swift in Sources */,
+				A2FBFF54218BE9C8007A61D6 /* SignInViewModelTests.swift in Sources */,
+				A281C9F5218BCBFE00B6E248 /* ApiClient.swift in Sources */,
+				A281C9E9218BC6FD00B6E248 /* ApproveViewModel.swift in Sources */,
+				A281C9F2218BCBD800B6E248 /* Employee.swift in Sources */,
+				A2FBFF5A218BEA0D007A61D6 /* SampleFaceViewModelTests.swift in Sources */,
+				A281C9EC218BC72400B6E248 /* SampleFaceViewModel.swift in Sources */,
+				A281C9E6218BC6ED00B6E248 /* SignInViewModel.swift in Sources */,
+				A255EE20218BD79C006BED25 /* NewVisitor.swift in Sources */,
+				A2FBFF3F218BE7B8007A61D6 /* MockApiClient.swift in Sources */,
+				A281C9EF218BCBC300B6E248 /* Visitor.swift in Sources */,
+				A281C9F8218BCC0900B6E248 /* ApiService.swift in Sources */,
+				A2D481D021817BAD009E6E9F /* FacialSignInTests.swift in Sources */,
+				A255EE1D218BD23E006BED25 /* PotentialVisitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D481D221817BAD009E6E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D481DB21817BAD009E6E9F /* FacialSignInUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2D481CD21817BAD009E6E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2D481B321817BAC009E6E9F /* FacialSignIn */;
+			targetProxy = A2D481CC21817BAD009E6E9F /* PBXContainerItemProxy */;
+		};
+		A2D481D821817BAD009E6E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2D481B321817BAC009E6E9F /* FacialSignIn */;
+			targetProxy = A2D481D721817BAD009E6E9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A2D481BB21817BAC009E6E9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2D481BC21817BAC009E6E9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2D481C321817BAD009E6E9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2D481C421817BAD009E6E9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2D481DD21817BAD009E6E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2D481DE21817BAD009E6E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2D481E021817BAD009E6E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C59BC594C8996D55EC88460A /* Pods-FacialSignIn.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQJPVA89QM;
+				INFOPLIST_FILE = FacialSignIn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.inteliment.FacialSignIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2D481E121817BAD009E6E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13B1D38C831B4058E5669BE8 /* Pods-FacialSignIn.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQJPVA89QM;
+				INFOPLIST_FILE = FacialSignIn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.inteliment.FacialSignIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A2D481E321817BAD009E6E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD657B168573653B574D3330 /* Pods-FacialSignInTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQJPVA89QM;
+				INFOPLIST_FILE = FacialSignInTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.inteliment.FacialSignInTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FacialSignIn.app/FacialSignIn";
+			};
+			name = Debug;
+		};
+		A2D481E421817BAD009E6E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 855EE9003D8921FFB4230CA3 /* Pods-FacialSignInTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQJPVA89QM;
+				INFOPLIST_FILE = FacialSignInTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.inteliment.FacialSignInTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FacialSignIn.app/FacialSignIn";
+			};
+			name = Release;
+		};
+		A2D481E621817BAD009E6E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 061AFE34962824BCB47C5932 /* Pods-FacialSignInUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQJPVA89QM;
+				INFOPLIST_FILE = FacialSignInUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.inteliment.FacialSignInUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FacialSignIn;
+			};
+			name = Debug;
+		};
+		A2D481E721817BAD009E6E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D960CD1873ADA0841E036802 /* Pods-FacialSignInUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQJPVA89QM;
+				INFOPLIST_FILE = FacialSignInUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.inteliment.FacialSignInUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FacialSignIn;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2D481AF21817BAC009E6E9F /* Build configuration list for PBXProject "FacialSignIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D481DD21817BAD009E6E9F /* Debug */,
+				A2D481DE21817BAD009E6E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2D481DF21817BAD009E6E9F /* Build configuration list for PBXNativeTarget "FacialSignIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D481E021817BAD009E6E9F /* Debug */,
+				A2D481E121817BAD009E6E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2D481E221817BAD009E6E9F /* Build configuration list for PBXNativeTarget "FacialSignInTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D481E321817BAD009E6E9F /* Debug */,
+				A2D481E421817BAD009E6E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2D481E521817BAD009E6E9F /* Build configuration list for PBXNativeTarget "FacialSignInUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D481E621817BAD009E6E9F /* Debug */,
+				A2D481E721817BAD009E6E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A2D481BE21817BAC009E6E9F /* FacialSignIn.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A2D481BF21817BAC009E6E9F /* FacialSignIn.xcdatamodel */,
+			);
+			currentVersion = A2D481BF21817BAC009E6E9F /* FacialSignIn.xcdatamodel */;
+			path = FacialSignIn.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A2D481AC21817BAC009E6E9F /* Project object */;
+}
